@@ -35,7 +35,7 @@ class Application
     if @@cart.empty?
       "Your cart is empty"
     else
-      @@cart.join(", ")
+      @@cart.join("\n")
     end
   end
 end
