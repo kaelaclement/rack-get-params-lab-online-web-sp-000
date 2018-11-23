@@ -35,7 +35,7 @@ class Application
     if @@cart.empty?
       "Your cart is empty"
     else
-      @@cart.each {|item| item}
+      @@cart.join(", ")
     end
   end
 end
