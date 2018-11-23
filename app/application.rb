@@ -33,9 +33,9 @@ class Application
 
   def list_cart
     if @@cart.empty?
-      "Your cart is empty"
+      return "Your cart is empty"
     else
-      @@cart.each {|item| item}
+      @@cart.each {|item| return item}
     end
   end
 end
